@@ -10,7 +10,7 @@ ContactController = RouteController.extend({
     },
 
     data: function() {
-        return Contacts.findOne(this.params.slug);
+        return Contacts.findOne({ _id: this.params.slug, owner: Meteor.user()._id });
     }
 });
 

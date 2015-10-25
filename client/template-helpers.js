@@ -1,7 +1,6 @@
   Template.contactList.helpers({
     contacts: function() {
-      return Contacts.find();
+      return Contacts.find({ owner: Meteor.user()._id });
     }
   });
 
-  
