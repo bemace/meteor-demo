@@ -1,0 +1,12 @@
+<template name="contactList">
+	<table border="1">
+		<thead>
+			<tr><th>Name</th><th>Email Address</th><th>Phone #</th></tr>
+		</thead>
+		<tbody>
+			{{#each contacts}}
+				{{> contact}}
+			{{/each}}
+		</tbody>
+	</table>
+</template>

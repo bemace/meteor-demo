@@ -14,6 +14,15 @@ if (Meteor.isClient) {
       Session.set('counter', Session.get('counter') + 1);
     }
   });
+
+  Template.contactList.helpers({
+    contacts: function() {
+      return [
+        { name: 'John Doe', email: 'johndoe@gmail.com', phone: '320-555-1234' },
+        { name: 'Jane Doe', email: 'janedoe@gmail.com', phone: '320-555-4321' },
+      ];
+    }
+  });
 }
 
 if (Meteor.isServer) {
