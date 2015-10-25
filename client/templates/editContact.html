@@ -1,0 +1,19 @@
+<template name="editContact">
+	<div class="editContact">
+		<form>
+			<label>Name
+				<input type="text" name="name" placeholder="Contact's Name" value="{{name}}" required>
+			</label>
+
+			<label>Email Address
+				<input type="email" name="email" placeholder="user@domain.tld" value="{{email}}" required>
+			</label>
+
+			<label>Phone Number
+				<input type="tel" name="phone" value="{{phone}}">
+			</label>
+
+			<button type="submit">Save</button>
+		</form>
+	</div>
+</template>

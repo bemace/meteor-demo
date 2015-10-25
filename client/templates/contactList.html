@@ -5,8 +5,11 @@
 		</thead>
 		<tbody>
 			{{#each contacts}}
-				{{> contact}}
+				{{> contactRow}}
 			{{/each}}
 		</tbody>
 	</table>
+	{{#if currentUser}}
+	<a href="{{pathFor route='Create Contact'}}" class="createNewContact">Create New Contact</a>
+	{{/if}}
 </template>
