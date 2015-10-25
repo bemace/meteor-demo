@@ -1,1 +1,9 @@
 /* CSS declarations go here */
+div#site-header {
+	width: 100%;
+	overflow: none;
+}
+
+div#login-buttons {
+	float: right;
+}
