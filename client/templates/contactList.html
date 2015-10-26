@@ -1,14 +1,9 @@
 <template name="contactList">
-	<table border="1">
-		<thead>
-			<tr><th>Name</th><th>Email Address</th><th>Phone #</th></tr>
-		</thead>
-		<tbody>
-			{{#each contacts}}
-				{{> contactRow}}
-			{{/each}}
-		</tbody>
-	</table>
+	<ul class="list-group">
+	{{#each contacts}}
+		{{> contactRow}}
+	{{/each}}
+	</ul>
 	{{#if currentUser}}
 	<a href="{{pathFor route='Create Contact'}}" class="createNewContact">Create New Contact</a>
 	{{/if}}

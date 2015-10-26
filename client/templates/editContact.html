@@ -1,19 +1,25 @@
 <template name="editContact">
 	<div class="editContact">
-		<form>
-			<label>Name
-				<input type="text" name="name" placeholder="Contact's Name" value="{{name}}" required>
-			</label>
+		<form role="form">
+			<div class="form-group">
+				<label>Name
+					<input type="text" name="name" placeholder="Contact's Name" value="{{name}}" required>
+				</label>
+			</div>
 
-			<label>Email Address
-				<input type="email" name="email" placeholder="user@domain.tld" value="{{email}}" required>
-			</label>
+			<div class="form-group">
+				<label>Email Address
+					<input type="email" name="email" placeholder="user@domain.tld" value="{{email}}" required>
+				</label>
+			</div>
 
-			<label>Phone Number
-				<input type="tel" name="phone" value="{{phone}}">
-			</label>
+			<div class="form-group">
+				<label>Phone Number
+					<input type="tel" name="phone" value="{{phone}}">
+				</label>
+			</div>
 
-			<button type="submit">Save</button>
+			<button type="submit" class="btn btn-default">Save</button>
 		</form>
 	</div>
 </template>
