@@ -35,5 +35,10 @@ Template.editContact.events({
       });
 
     }
+  },
+  "click .cancel": function(e, tmpl) {
+      e.preventDefault();
+      var _this = this;
+      Router.go('Contact', {slug: _this._id});
   }
 });

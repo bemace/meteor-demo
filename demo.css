@@ -1,9 +1,10 @@
 /* CSS declarations go here */
-div#site-header {
+header {
 	width: 100%;
 	overflow: none;
 }
 
 div#login-buttons {
 	float: right;
+	padding: 10px 15px;
 }

@@ -4,3 +4,9 @@
     }
   });
 
+  Template.contactList.events({
+    "click .delete": function() {
+      Contacts.remove(this._id);
+    }
+  });
+

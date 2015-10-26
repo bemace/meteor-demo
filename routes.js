@@ -24,7 +24,7 @@ Router.map(function() {
 	});
 
 	this.route('Contact', {
-		path: '/contacts/:slug',
+		path: '/contact/:slug',
 		template: 'contact',
 		controller: 'ContactController'
 	});
